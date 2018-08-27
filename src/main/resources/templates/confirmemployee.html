@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Confirm Song</title>
+</head>
+<body>
+
+<p th:inline="text">
+    Employee id is [[${employee.id}]] <br/>
+    Employee name is [[${employee.firstName}]]
+    [[${employee.lastName}]].<br />
+    Social security number is [[${employee.socialSecurityNumber}]].<br />
+    Date of birth is [[${employee.dateOfBirth}]].<br />
+</p>
+
+</body>
+</html>

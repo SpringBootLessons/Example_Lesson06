@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Song Form</title>
+</head>
+<body>
+
+<h1>Song Form</h1>
+<form action="#" th:action="@{/processemployeeform}" th:object="${employee}"
+      method="post">
+    Employee id: <input type="text" th:field="*{id}" /><br />
+    First name: <input type="text" th:field="*{firstName}" /><br />
+    Last lame: <input type="text" th:field="*{lastName}" /><br />
+    Social security number: <input type="text"
+                                th:field="*{socialSecurityNumber}" /><br />
+    Date of birth: <input type="text" th:field="*{dateOfBirth}" /><br />
+    <input type="submit" value="Submit" />
+</form>
+
+</body>
+</html>
